@@ -1,0 +1,61 @@
+.skills {
+  padding-top: 10em;
+  margin-left: 50px;
+  margin-right: 50px;
+
+  .skill-title {
+    font-size: 3em;
+    font-style: italic;
+    padding-left: 50px;
+  }
+  .sub-skill-title {
+    font-size: 2em;
+    font-style: italic;
+    padding-left: 25px;
+  }
+
+  .skill-prog {
+    flex-direction: column;
+    margin-left: 10em;
+
+    .skill-prog-title {
+      font-size: 1.8em;
+      font-style: oblique;
+      margin: 1em 0 1em 0;
+    }
+
+    .skill-prog-content {
+      font-size: 1.3em;
+      padding: 0 0 1em 0.4em;
+    }
+  }
+  .skill-lang {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
+    text-align: start;
+
+    .skill-lang-flag {
+      padding-right: 2em;
+      justify-self: end;
+      padding-bottom: 3px;
+    }
+    .skill-lang-name {
+      font-size: 1.3em;
+      padding: 0 0 1em 0.4em;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .skill-container {
+    margin-left: 3em;
+  }
+
+  .skill-lang {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    row-gap: 10px;
+    padding-left: 3em;
+  }
+}

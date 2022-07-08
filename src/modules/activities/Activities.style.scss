@@ -1,0 +1,69 @@
+.activity {
+  padding-top: 10em;
+  margin-left: 50px;
+  margin-right: 50px;
+  .activity-title {
+    font-size: 3em;
+    font-style: italic;
+    padding-left: 50px;
+  }
+  .activity-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }  
+  .sub-activity-title {
+    font-size: 2em;
+    font-style: italic;
+    padding-left: 25px;
+  }
+}
+
+.activity-secourisme {
+  grid-column-start: 1;
+  grid-column: 2/4;
+  .secourisme-description {
+    font-size: 1.3em;
+    line-height: 150%;
+  }
+}
+.activity-violon {
+  grid-column: span 2/5;
+  grid-row-start: 2;
+  .violon-description {
+    font-size: 1.3em;
+    line-height: 150%;
+  }
+}
+
+.activity-games {
+  grid-column: 2/4;
+  grid-row: 3/5;
+  position: relative;
+  .rhythm-description {
+    font-size: 1.3em;
+    line-height: 150%;
+  }
+}
+@media screen and (max-width: 1040px) {
+  .activity-secourisme,
+  .activity-violon,
+  .activity-games {
+    grid-column-start: 1;
+    padding-left: 1em;
+  }
+
+  .activity-esport img {
+    width: 20em;
+    height: 13em;
+  }
+  .activity-picture {
+    display: flex;
+  }
+  .activity-anime1 {
+    height: 16em;
+  }
+  .activity-anime2 {
+    height: 16em;
+  }
+}
